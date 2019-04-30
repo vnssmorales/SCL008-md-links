@@ -1,6 +1,6 @@
 {
-  "name": "md-links",
-  "version": "0.1.0",
+  "name": "md-links-vane",
+  "version": "0.1.1",
   "author": "Vanessa",
   "bin": {
     "md-links": "index.js"
@@ -8,10 +8,12 @@
   "scripts": {
     "test": "jest --coverage"
   },
+  "repository": "https://github.com/vnssmorales/SCL008-md-links",
   "dependencies": {
     "@linclark/pkg": "^1.0.2",
     "jest": "^24.7.1",
     "markdown-link-extractor": "^1.2.0",
+    "marked": "^0.6.2",
     "node-fetch": "^2.3.0",
     "path": "^0.12.7"
   }

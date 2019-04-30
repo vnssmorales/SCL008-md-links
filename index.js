@@ -1,46 +1,46 @@
 #!/usr/bin/env node
+
 const mdLinks = require('./md-links');
-const threeArgument = process.argv[2];
-const fourArgument =process.argv[3];
+/*const option0 = process.argv[2];
+const option1 =process.argv[3];
 
 
 ///para saber si lo estan ejecutando desde la terminal o lo usan como modulo
 if(require.main === module) {
-  mdLinks(threeArgument,fourArgument).then(console.log);
+  mdLinks(option0,option1).then(console.log);
 }
 
-mdLinks(threeArgument,fourArgument)
-
-/*
-const mdLinks = require('./md-links');
-console.log(mdLinks.add(1,2));
-console.log(mdLinks.multiply(2,2));
+mdLinks(option0,option1)
 */
 
-/*module.exports = () => {
-  console.log('Welcome to the outside!')
-} */
+const pathUser = process.argv.slice(2); 
+const pathArray = Object.values(pathUser);
+const paths = pathArray[0];
+const valUser = process.argv.slice(3); 
+const comand0 = valUser[0];
+const comand1 = valUser[1];
 
-////ejemplo promesas readme////
+const option = {
+    validate : comand0 === '--validate' || comand1 === '--validate',
+    stats : comand1 === '--stats' || comand0 === '--stats'
+  }
 
-/*
-const mdLinks = require("md-links");
-
-mdLinks("./index.js/example.md")
-  .then(links => {
-    // => [{ href, text, file }]
-  })
-  .catch(console.error);
-
-mdLinks("./index.js/example.md", { validate: true })
-  .then(links => {
-    // => [{ href, text, file, status, ok }]
-  })
-  .catch(console.error);
-
-mdLinks("./index.js/dir")
-  .then(links => {
-    // => [{ href, text, file }]
-  })
-  .catch(console.error);
-  */
+mdLinks.mdLinks(paths)
+.then((linksArray)=>{ 
+setTimeout(() => { 
+if(option.validate && option.stats){
+  for (const value in linksArray){
+    console.log(value+ " : " +linksArray[value])
+  }}else if(option.stats){
+    for (const value in linksArray){
+      console.log(value+ " : " +linksArray[value])
+  }}else{
+    linksArray.forEach(element => {
+  if(typeof element === 'object'){
+    for (const value in element){
+      console.log(value+ " : " +element[value])}
+  }else{
+    console.log(element)
+  }
+})}}, 12000)
+})
