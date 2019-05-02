@@ -6,9 +6,6 @@ let fetch = require('node-fetch');
 const routeFile = require('path'); //manjear rutas
 
 
-
-
-
 const mdLinks = (path, option) => {
     if (option && option.validate) {
         return new Promise((resolve, reject) => {
@@ -21,7 +18,6 @@ const mdLinks = (path, option) => {
         return resultLinks(path);
     }
 }
-
 
 ///permite extraer los links de un archivo .md///
 const resultLinks = (path) => {
@@ -57,7 +53,6 @@ const resultLinks = (path) => {
         }
     })
 }
-
 
 ///permite agregar el status a los links encontrados
 const linkValidate = (linksArray) => {
