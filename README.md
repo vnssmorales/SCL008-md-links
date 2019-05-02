@@ -20,7 +20,7 @@ En base a esto, este pequeño módulo, extrae de forma ordenada todos los links 
 Realizado en github.
 [Planificación](https://github.com/vnssmorales/SCL008-md-links/projects/1)
 
-![issues](issues.png "Imagen Planificación")
+![issues](https://github.com/vnssmorales/SCL008-md-links/blob/master/img/issues.png)
 
 
 
