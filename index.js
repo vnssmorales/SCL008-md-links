@@ -2,15 +2,16 @@
 
 const mdLinks = require('./md-links');
 
-/*const option0 = process.argv[2];
+const option0 = process.argv[2];
 const option1 =process.argv[3];
+
 ///para saber si lo estan ejecutando desde la terminal o lo usan como modulo
 if(require.main === module) {
   mdLinks.mdLinks(option0,option1).then(console.log);
 }
-mdLinks.mdLinks(option0,option1)*/
+mdLinks.mdLinks(option0,option1)
 
-const pathUser = process.argv.slice(2); 
+/*const pathUser = process.argv.slice(2); 
 const pathArray = Object.values(pathUser);
 const paths = pathArray[0];
 const valUser = process.argv.slice(3); 
@@ -41,4 +42,4 @@ if(option.validate && option.stats){
   }
 })}}, 12000)
 })
-
+*/
