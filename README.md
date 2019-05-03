@@ -23,7 +23,6 @@ Realizado en github.
 ![issues](https://github.com/vnssmorales/SCL008-md-links/blob/master/img/issues.png)
 
 
-
 ## Requisitos
 
 * Tener NodeJS instalado.
@@ -31,6 +30,7 @@ Realizado en github.
 ## Herramientas utilizadas
 
 Para poder realizar esta libreria utilicé Node.js, y específicamente los siguientes módulos:
+
 * path : para poder tener información de la ruta.
 * fs (file system): para ingresar al sistemas de archivos.
 * marked : para renderizar texto plano a otro (como html).
@@ -39,13 +39,15 @@ Para poder realizar esta libreria utilicé Node.js, y específicamente los sigui
 ## Instalación de la librería
 
 Lo primero que debes hacer es ingresar el comando "npm i md-links-vane" en la carpeta que desees usarlo.
-Los comandos son para usarla son los siguientes:
+Los comandos para usarla son los siguientes:
 
 md-links : la función de mi libreria; aquí puedes poner la ruta de tu archivo, o el nombre.
 
-* --stats : para saber la cantidad total y unicos de links 
-* --validate : para saber la informacion de links que se encuentran rotos y los que no.
+* --stats : para saber la cantidad total y unicos de links (en desarrollo).
+* --validate : para saber la informacion de links que se encuentran rotos y los que no (en desarrollo).
 
 Si quieres visualizar los links de tu archivo colocas solo la ruta:
 
 * Ejemplo: md-links README.md
+
+![ejecutable] (https://github.com/vnssmorales/SCL008-md-links/blob/master/img/mdlinks-screenshoot.png)

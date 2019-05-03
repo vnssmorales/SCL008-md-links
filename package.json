@@ -1,7 +1,8 @@
 {
   "name": "md-links-vane",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "Vanessa",
+  "main": "index.js",
   "bin": {
     "md-links": "index.js"
   },
