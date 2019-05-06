@@ -50,4 +50,4 @@ Si quieres visualizar los links de tu archivo colocas solo la ruta:
 
 * Ejemplo: md-links README.md
 
-![screenshot] (https://github.com/vnssmorales/SCL008-md-links/blob/master/img/mdlinks-screenshoot.png)
+![mdlinks] (https://github.com/vnssmorales/SCL008-md-links/blob/master/img/mdlinks.png)

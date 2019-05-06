@@ -60,8 +60,12 @@ const linkValidate = (linksArray) => {
         return new Promise((resolve) => {  //devuelve una sola promesa //
             fetch(linkObtained.href)
                 .then(resp => {
-                    linkObtained.status = resp.status;
-                    linkObtained.statusText = resp.statusText;
+                    if (resp.status === 200) {
+                        return resolve ({
+                            status,
+                            validate : resp.statusText,
+                        });
+                    }
                     resolve(linkObtained);
                 })
                 .catch((err) => {
